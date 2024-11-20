@@ -2,19 +2,79 @@
 $theme_fg_color: "@theme_fg_color";
 $theme_bg_color: "@theme_bg_color";
 
+* {
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  color: #{$theme_fg_color};
+  font-family: "JetBrainsMono Nerd Font";
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
 window.Bar {
-    background: transparent;
-    color: #{$theme_bg_color};
-    font-weight: bold;
+  > centerbox {
+    background: #{$theme_bg_color};
+    border: 1px solid #{$theme_fg_color};
+    border-radius: 0;
+    margin: 12px 12px 0px 12px;
+    padding: 6px;
+  }
 
-    >centerbox {
-        background: #{$theme_bg_color};
-        border-radius: 10px;
-        margin: 8px;
-    }
+  button {
+    background: #{$theme_bg_color};
+    border: lightgrey;
+    border-radius: 0;
+    margin: 2px;
+  }
+  button:hover {
+    background: lightgrey;
+  }
+}
 
-    button {
-        border-radius: 8px;
-        margin: 2px;
-    }
+window.AppMenu,
+window.SystemMenu {
+  > box {
+    background: #{$theme_bg_color};
+    border: 1px solid #{$theme_fg_color};
+    border-radius: 0;
+    margin: 12px;
+  }
+
+  > box.menuouter {
+    padding: 6px;
+  }
+
+  box.power,
+  box.audio {
+    margin-bottom: 6px;
+  }
+
+  box.system > button.network,
+  box.system > button.tailscale {
+    margin-bottom: 6px;
+  }
+
+  button {
+    background: #{$theme_bg_color};
+    border: 1px solid lightgrey;
+    border-radius: 0;
+    margin: 2px;
+  }
+
+  button.on {
+    background: lightgrey;
+  }
+
+  button:hover {
+    background: lightgrey;
+  }
+
+  slider {
+    background: #{$theme_bg_color};
+  }
+
+  trough {
+    background: #{$theme_fg_color};
+  }
 }

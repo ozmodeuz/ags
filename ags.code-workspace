@@ -1,0 +1,13 @@
+{
+  "folders": [
+    {
+      "path": "."
+    },
+    {
+      "path": "../niri"
+    }
+  ],
+  "settings": {
+    "terminal.integrated.defaultProfile.linux": "nix develop"
+  }
+}

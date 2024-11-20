@@ -1,0 +1,14 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Bundle",
+      "type": "shell",
+      "command": "bundle.sh",
+      "group": "build",
+      "options": {
+        "shell": { "executable": "bash", "args": [] }
+      }
+    }
+  ]
+}
